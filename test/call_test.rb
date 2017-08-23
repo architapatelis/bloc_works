@@ -9,16 +9,16 @@
 
 =begin
   Results:
-    Loaded suite test/call_test
-    Started
-    .
+  Loaded suite test/call_test
+  Started
+  .
 
-    Finished in 0.008310335 seconds.
-    --------------------------------------------------------------------------------------
-    1 tests, 3 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
-    100% passed
-    --------------------------------------------------------------------------------------
-    120.33 tests/s, 361.00 assertions/s
+  Finished in 0.039924037 seconds.
+  --------------------------------------------------------------------------------------
+  1 tests, 3 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+  100% passed
+  --------------------------------------------------------------------------------------
+  25.05 tests/s, 75.14 assertions/s
 =end
 
 require "bloc_works"
