@@ -1,0 +1,36 @@
+Rails is comprised of five gems. Write a paragraph on what each does:
+
+1) ActiveModel -
+reference links:
+http://culttt.com/2015/11/11/what-is-active-model/
+http://guides.rubyonrails.org/active_model_basics.html
+
+  Active Model is basically just a set of modules you can include in your Ruby objects to add certain aspects of functionality from Active Record. We can use Active Model for modules such as validation, serialization, translation, callback etc. outside of the ORM.
+
+
+2) ActiveRecord -
+reference links:
+http://guides.rubyonrails.org/active_record_basics.html
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-basics
+
+  ActiveRecord is the ORM(object relational mapping) that comes out-of-the-box with Rails. Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic. In order to interact with data stored in the database we would have to use something like SQL, but Active Record allows us to interact with that data as though it was a normal Ruby object.
+
+3) ActiveSupport -
+reference links:
+http://guides.rubyonrails.org/active_support_core_extensions.html
+https://github.com/rails/rails/tree/master/activesupport
+
+  Active Support is a collection of utility classes and standard library extensions that were found useful for the Rails framework.
+
+4) ActionPack -
+reference links:
+https://github.com/rails/rails/tree/master/actionpack
+
+  Action Pack is a framework for handling and responding to web requests. It provides mechanisms for routing (mapping request URLs to actions), defining controllers that implement actions, and generating responses by rendering views, which are templates of various formats. In short, Action Pack provides the view and controller layers in the MVC paradigm.
+
+5) ActionMailer -
+reference links:
+https://github.com/rails/rails/tree/master/actionmailer
+http://guides.rubyonrails.org/action_mailer_basics.html
+
+  Action Mailer allows you to send emails from your application using mailer classes and views. Sending out forgotten passwords, welcome wishes on signup, invoices for billing, and any other use case that requires a written notification to either a person or another system.
