@@ -12,6 +12,13 @@ module BlocWorks
       # resulting filename should be - app/views/books/{view}.html.erb
       filename = File.join("app", "views", controller_dir, "#{view}.html.erb")
       template = File.read(filename)
+
+      # place any @instance_variables into the locals hash
+      # now you can use @instance_variables in views as <%= @iv %>
+      self.instance_variables.each do |iv|
+        locals[iv] = instance_variable_get(iv)
+      end
+
       eruby = Erubis::Eruby.new(template)
       eruby.result(locals.merge(env: @env))
     end

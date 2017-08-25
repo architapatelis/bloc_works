@@ -12,8 +12,12 @@ module BlocWorks
       _, controller, action, _ = env["PATH_INFO"].split("/", 4)
       controller = controller.capitalize
       controller = "#{controller}Controller" #BooksController
-      # Because of const_get, the first element will be a reference to the  BooksController class, not just the string 'BooksController'.
-      [Object.const_get(controller), action]
+      # Because of const_get, the first array element will be a reference to the  BooksController class, not just the string 'BooksController'.
+      if controller != "Controller"
+        [Object.const_get(controller), action]
+      else
+        return nil
+      end
     end
 
 =begin

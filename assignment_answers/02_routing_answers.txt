@@ -1,0 +1,5 @@
+How does our simple routing differ from Rails routing? What are we missing?
+
+Ans. Our simple routing only allows for GET actions to be done on a Bloc Works application–the user can retrieve web pages and get some error messages,.
+
+With Rails we were able to perform CRUD operations with the database, which is what we are missing with simple routing. Also, in Rails, a resourceful route (:resources) provides a mapping between HTTP verbs and URLs to controller actions. By convention, each action also maps to a specific CRUD operation in a database.
